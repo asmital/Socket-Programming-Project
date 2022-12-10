@@ -11,3 +11,6 @@ These files are uploaded in the referencefiles folder inside the ADDITIONAL INFO
 
 Save these files in the directory of the server executable and then make your clients request for them, if you want to test out the code. They should be successfully saved in the clientfolder. 
 
+The code is pretty well commented, so it's working should be self explanatory. 
+
+Take a look at the typescripts to see how to compile the client and server code!
