@@ -1,0 +1,235 @@
+Script started on 2022-04-15 10:44:32+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project[00m$ ls
+ [0m[01;31m2018B5A70881G_Lab5.zip[0m   [34;42mclientfolder[0m     [01;35mpicture.png[0m   server.c
+[01;34m'ADDITIONAL INFO'[0m         [01;32mlol[0m              pipe.c        serverscript.txt
+ [01;32ma.out[0m                   'Oop Lab 5.pdf'   [01;32mserver[0m        testing.txt
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project[00m$ gcc -pthread -o server server.c
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project[00m$ ./server
+Enter port number to connect to. 
+4444
+Please enter interface to connect to! 
+wlp2s0
+IP address for wlp2s0 10.60.3.13
+Port no: 4444 
+S:Connection has been requested 
+S:We are accepting the client! 
+S:Client 1 with IP 10.60.3.13 and port 35035 serviced by thread id 6746 asks for filename :testing.txt 
+S:Obtaining permission mode for 'testing.txt':
+S:Permissions are rw-rw-r-- 
+S:Permissions in octal format (664) 
+
+S:File sent! 
+S:Permissions rw-rw-r-- sent!
+S:Connection has been requested 
+S:We are accepting the client! 
+S:Client 2 with IP 10.60.3.13 and port 35547 serviced by thread id 6774 asks for filename :2018B5A70881G_Lab5.zip 
+S:Obtaining permission mode for '2018B5A70881G_Lab5.zip':
+S:Permissions are rw-rw-r-- 
+S:Permissions in octal format (664) 
+
+S:File sent! 
+S:Permissions rw-rw-r-- sent!
+S:Connection has been requested 
+S:We are accepting the client! 
+S:Client 3 with IP 10.60.3.13 and port 36059 serviced by thread id 6830 asks for filename :picture.png 
+S:Obtaining permission mode for 'picture.png':
+S:Permissions are rw-rw-r-- 
+S:Permissions in octal format (664) 
+
+S:File sent! 
+S:Permissions rw-rw-r-- sent!
+S:Connection has been requested 
+S:We are accepting the client! 
+S:Client 4 with IP 10.60.3.13 and port 36571 serviced by thread id 6861 asks for filename :lol 
+S:Obtaining permission mode for 'lol':
+S:Permissions are rwxrwxr-x 
+S:Permissions in octal format (775) 
+
+S:File sent! 
+S:Permissions rwxrwxr-x sent!
+S:Connection has been requested 
+S:We are accepting the client! 
+S:Client 5 with IP 10.60.3.13 and port 37083 serviced by thread id 6865 asks for filename :pipe.c 
+S:Obtaining permission mode for 'pipe.c':
+S:Permissions are rw-rw-r-- 
+S:Permissions in octal format (664) 
+
+S:File sent! 
+S:Permissions rw-rw-r-- sent!
+S:Connection has been requested 
+S: rejected! 
+S:Client 1 with IP 10.60.3.13 and port 35035 serviced by thread id 6746 asks for filename :pipe.c 
+S:Obtaining permission mode for 'pipe.c':
+S:Permissions are rw-rw-r-- 
+S:Permissions in octal format (664) 
+
+S:File sent! 
+S:Permissions rw-rw-r-- sent!
+S:Closing connection for client 1 
+S:Connection has been requested 
+S:We are accepting the client! 
+S:Client 1 with IP 10.60.3.13 and port 38107 serviced by thread id 6942 asks for filename :2018B5A70881G_Lab5.zip 
+S:Obtaining permission mode for '2018B5A70881G_Lab5.zip':
+S:Permissions are rw-rw-r-- 
+S:Permissions in octal format (664) 
+
+S:File sent! 
+S:Permissions rw-rw-r-- sent!
+S:Closing connection for client 2 
+S:Closing connection for client 3 
+S:Closing connection for client 4 
+S:Closing connection for client 5 
+S:Closing connection for client 1 
+^C
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project[00m$ exit
+exit
+
+Script done on 2022-04-15 10:51:14+05:30 [COMMAND_EXIT_CODE="130"]
+Script started on 2022-04-15 10:45:47+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ls
+client1script.txt  client3script.txt  client5script.txt  client.c
+client2script.txt  client4script.txt  client6script.txt
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ gcc -pthread -o clien 
+t client.c
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: Hi! You are accepted
+Please enter filename! 
+C: testing.txt
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: pipe/ .c
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: quit
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ls
+[0m[01;31m2018B5A70881G_Lab5.zip[0m  client3script.txt  client.c     testing.txt
+[01;32mclient[0m                  client4script.txt  [01;32mlol[0m
+client1script.txt       client5script.txt  [01;35mpicture.png[0m
+client2script.txt       client6script.txt  pipe.c
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ exit
+exit
+
+Script done on 2022-04-15 10:50:39+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-04-15 10:41:09+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: Hi! You are accepted
+Please enter filename! 
+C: 2018B5A70881G_Lab5.zip
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: quit
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ exit
+exit
+
+Script done on 2022-04-15 10:50:43+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-04-15 10:41:22+05:30 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: Hi! You are accepted
+Please enter filename! 
+C: picture.png
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: quit
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ exit
+exit
+
+Script done on 2022-04-15 10:50:46+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-04-15 10:41:35+05:30 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: Hi! You are accepted
+Please enter filename! 
+C: lol
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rwxrwxr-x 
+C: Permissions in Octal form 775
+C:Permissions updated!
+Please enter filename! 
+C: quit
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ exit
+exit
+
+Script done on 2022-04-15 10:50:50+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-04-15 10:41:43+05:30 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: Hi! You are accepted
+Please enter filename! 
+C: pipe.c
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: quit
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ exit
+exit
+
+Script done on 2022-04-15 10:50:53+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-04-15 10:41:50+05:30 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: rejected!
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: Hi! You are accepted
+Please enter filename! 
+C: 2018B5A70881G_Lab5.zip
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: quit
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ls -a
+[0m[34;42m.[0m                       client1script.txt  client5script.txt  [01;35mpicture.png[0m
+[01;34m..[0m                      client2script.txt  client6script.txt  pipe.c
+[01;31m2018B5A70881G_Lab5.zip[0m  client3script.txt  client.c           testing.txt
+[01;32mclient[0m                  client4script.txt  [01;32mlol[0m
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ exit
+exit
+
+Script done on 2022-04-15 10:51:06+05:30 [COMMAND_EXIT_CODE="0"]

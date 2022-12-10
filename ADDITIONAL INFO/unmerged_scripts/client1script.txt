@@ -1,0 +1,36 @@
+Script started on 2022-04-15 10:45:47+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ls
+client1script.txt  client3script.txt  client5script.txt  client.c
+client2script.txt  client4script.txt  client6script.txt
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ gcc -pthread -o clien t client.c
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ./client
+Enter port number to connect to. 
+4444
+Enter IP address to connect to. 
+10.60.3.13
+S: Hi! You are accepted
+Please enter filename! 
+C: testing.txt
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: pipe/ .c
+C: File received!
+C:Obtaining permissions: 
+C:Permissions are rw-rw-r-- 
+C: Permissions in Octal form 664
+C:Permissions updated!
+Please enter filename! 
+C: quit
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ ls
+[0m[01;31m2018B5A70881G_Lab5.zip[0m  client3script.txt  client.c     testing.txt
+[01;32mclient[0m                  client4script.txt  [01;32mlol[0m
+client1script.txt       client5script.txt  [01;35mpicture.png[0m
+client2script.txt       client6script.txt  pipe.c
+]0;asmita@buntz: ~/Desktop/2018B5A70881G_Project/clientfolder[01;32masmita@buntz[00m:[01;34m~/Desktop/2018B5A70881G_Project/clientfolder[00m$ exit
+exit
+
+Script done on 2022-04-15 10:50:39+05:30 [COMMAND_EXIT_CODE="0"]
